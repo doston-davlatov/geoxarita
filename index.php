@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-// ======= Session va xavfsizlik =======
+// ======= Session va xavfsizlik ======
 if (empty($_SESSION['loggedin']) || empty($_SESSION['username'])) {
     header("Location: ./login/");
     exit;
